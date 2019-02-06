@@ -1,6 +1,6 @@
 package com.abrahambueno;
 
-public class Birds extends Animals {
+public class Birds implements Animals {
     String name;
     int year;
 
