@@ -1,7 +1,7 @@
 package com.abrahambueno;
 
 public interface Animals {
-    void move();
-    void breath();
-    void reproduce();
+    String move();
+    String breath();
+    String reproduce();
 }
