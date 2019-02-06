@@ -1,5 +1,7 @@
 package com.abrahambueno;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,5 +13,13 @@ public class Main {
 	    Mammals raccoon = new Mammals("Raccoon", 1758);
 	    Mammals bigfoot = new Mammals("Bigfoot", 2021);
 
+        ArrayList<AbstractAnimals> animalList = new ArrayList<AbstractAnimals>();
+        animalList.add(new AnimalsFromMammals("Panda", 1869));
+        animalList.add(new AnimalsFromMammals("Panda", 1869));
+        animalList.add(new AnimalsFromMammals("Panda", 1869));
+        animalList.add(new AnimalsFromMammals("Panda", 1869));
+        animalList.add(new AnimalsFromMammals("Panda", 1869));
+        animalList.add(new AnimalsFromMammals("Panda", 1869));
+        animalList.add(new AnimalsFromMammals("Panda", 1869));
     }
 }
