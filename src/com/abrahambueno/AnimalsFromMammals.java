@@ -1,33 +1,33 @@
 package com.abrahambueno;
 
-public class AnimalsFromMammals extends AbstractAnimals implements Animals {
+public class AnimalsFromMammals extends AbstractAnimals  {
     private String name;
     private int year;
 
     @Override
-    public String getName() {
-        return name;
+    public String move() {
+        return "walk";
     }
 
-    public AnimalsFromMammals(String name, int year, int id) {
-        super(id);
+    @Override
+    public String breath() {
+        return "lungs";
+    }
+
+    @Override
+    public String reproduce() {
+        return "births";
+    }
+
+    public AnimalsFromMammals(String name, int year) {
+//        super();
         this.name = name;
         this.year = year;
     }
 
     @Override
-    public String move() {
-        return null;
-    }
-
-    @Override
-    public String breath() {
-        return null;
-    }
-
-    @Override
-    public String reproduce() {
-        return null;
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -36,13 +36,32 @@ public class AnimalsFromMammals extends AbstractAnimals implements Animals {
     }
 
     @Override
+    public int getID() {
+        return id;
+    }
+
+//    @Override
+//    public String move() {
+//        return "walk";
+//    }
+//
+//    @Override
+//    public String breath() {
+//        return "lungs";
+//    }
+//
+//    @Override
+//    public String reproduce() {
+//        return "soon";
+//    }
+
+    @Override
     public String toString() {
         return "AnimalsFromMammals{" +
                 "name='" + name + '\'' +
                 ", year=" + year +
                 ", id=" + id +
+                ", food='" + food + '\'' +
                 '}';
     }
-
-
 }

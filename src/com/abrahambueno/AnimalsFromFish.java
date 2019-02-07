@@ -4,25 +4,10 @@ public class AnimalsFromFish extends AbstractAnimals implements Animals {
     private String name;
     private int year;
 
-    public AnimalsFromFish(String name, int year, int id) {
-        super(id);
+    public AnimalsFromFish(String name, int year) {
+//        super(id);
         this.name = name;
         this.year = year;
-    }
-
-    @Override
-    public String move() {
-        return null;
-    }
-
-    @Override
-    public String breath() {
-        return null;
-    }
-
-    @Override
-    public String reproduce() {
-        return null;
     }
 
     @Override
@@ -36,11 +21,32 @@ public class AnimalsFromFish extends AbstractAnimals implements Animals {
     }
 
     @Override
+    public int getID() {
+        return id;
+    }
+
+    @Override
+    public String move() {
+        return "swim";
+    }
+
+    @Override
+    public String breath() {
+        return "gills";
+    }
+
+    @Override
+    public String reproduce() {
+        return "soon";
+    }
+
+    @Override
     public String toString() {
         return "AnimalsFromFish{" +
                 "name='" + name + '\'' +
                 ", year=" + year +
                 ", id=" + id +
+                ", food='" + food + '\'' +
                 '}';
     }
 }
