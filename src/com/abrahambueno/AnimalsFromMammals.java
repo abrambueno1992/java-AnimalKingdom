@@ -9,7 +9,8 @@ public class AnimalsFromMammals extends AbstractAnimals implements Animals {
         return name;
     }
 
-    public AnimalsFromMammals(String name, int year) {
+    public AnimalsFromMammals(String name, int year, int id) {
+        super(id);
         this.name = name;
         this.year = year;
     }
