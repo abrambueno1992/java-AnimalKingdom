@@ -39,10 +39,20 @@ public class Main {
         animalList.add(perch);
 
 
-        animalList.forEach((v) -> System.out.println(v.getID()));
-        animalList.forEach((v) -> System.out.println(v.getName()));
-        animalList.forEach((v) -> System.out.println(v.getFood()));
-        animalList.forEach((v) -> System.out.println(v.move()));
+//        animalList.forEach((v) -> System.out.println(v.getID()));
+        animalList.forEach((v) -> System.out.println(v.getName() + " " + v.getYear()));
+//        animalList.forEach((v) -> System.out.println(v.getFood()));
+//        animalList.forEach((v) -> System.out.println(v.move()));
+//        animalList.sort((v1, v2) -> v2.getYear() -v1.getYear());
+        System.out.println("*****Descending Order by year*****");
+        animalList.forEach((v) -> System.out.println(v.getName() + " " + v.getYear()));
+        System.out.println("*****Alphabetical Order*****");
+        animalList.sort((v1, v2) -> v1.getName().compareToIgnoreCase(v2.getName()));
+        animalList.forEach((v) -> System.out.println(v.getName() + " " + v.getYear()));
+        System.out.println("*****Order by how they move*****");
+        animalList.sort((v1, v2) -> v1.move().compareToIgnoreCase(v2.move()));
+        animalList.forEach((v) -> System.out.println(v.getName() + " " + v.getYear()));
+        System.out.println("*****Only animals that breath with lungs");
 
 //        animalList.forEach((v) -> System.out.println(v));
     }
