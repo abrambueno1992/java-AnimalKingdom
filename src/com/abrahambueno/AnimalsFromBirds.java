@@ -37,7 +37,7 @@ public class AnimalsFromBirds extends AbstractAnimals implements Animals {
 
     @Override
     public String reproduce() {
-        return "soon";
+        return "eggs";
     }
 
     @Override
